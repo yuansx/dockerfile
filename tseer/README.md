@@ -8,7 +8,7 @@ docker build -t tseer:v1.0
 
 ## 2. 创建容器
 ```
-docker run --name tseer --privileged -p 12345:22 -p 8080:8080 tseer:v1.0 /usr/sbin/init
+docker run --name tseer --privileged -p 12345:22 -p 8080:8080 -tid tseer:v1.0 /usr/sbin/init
 ```
 创建名为tseer的容器，并且开放端口为22和8080
 
